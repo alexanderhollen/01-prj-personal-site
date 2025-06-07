@@ -1,11 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Outfit', sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 0;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+      color: white;
+      padding: 6rem 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      margin-top: 1rem;
+    }
+
+    .bio h2,
+    .skills h2,
+    .projects h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .bio {
+      background-color: #fff;
+    }
+
+    .skills {
+      background-color: #fff;
+    }
+    .skill-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .skill-list li {
+      background-color: #e0e0e0;
+      padding: 0.75rem 1.5rem;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    .projects {
+      background-color: #f0f0f0;
+    }
+    .project-grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      margin-top: 1rem;
+    }
+    .project-card {
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    .project-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      display: block;
+    }
+    .project-card h3 {
+      margin: 0.75rem 1rem 0.5rem 1rem;
+      font-size: 1.1rem;
+    }
+    .project-card p {
+      margin: 0 1rem 1rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    .footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <header class="hero">
+    <div class="container">
+      <h1>Hello, I'm Alex</h1>
+      <p>Full-Stack Developer & Creative Technologist</p>
+    </div>
+  </header>
+
+  <section class="bio">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a passionate developer who loves building engaging digital experiences. With a focus on clean design and performant code, I enjoy turning ideas into real-world projects.</p>
+    </div>
+  </section>
+
+  <section class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skill-list">
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Python</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="p1.jpg" alt="Project 1" />
+          <h3>Fitness Tracker App</h3>
+          <p>A sleek and user-friendly fitness tracker built with Flutter and FlutterFlow, designed to help users track their workouts and progress effortlessly. With an intuitive interface, users can log exercises, monitor their improvements, and stay motivated on their fitness journey.</p>
+        </div>
+        <div class="project-card">
+          <img src="IMG3.png" alt="Project 2" />
+          <h3>Unity Mobile Game - Box Bounce</h3>
+          <p>Box Bounce is a physics-based arcade game built with Unity and C#, where players control a bouncing box to navigate dynamic obstacles and reach the goal. Featuring smooth mechanics, responsive controls, and engaging level design, the game challenges players to master timing and precision.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Alex Hollenbeck. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
